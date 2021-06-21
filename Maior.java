@@ -13,9 +13,17 @@ class Maior{
     float S = NumInput.nextInt();
     System.out.println("Digite T: ");
     float T = NumInput.nextInt();
-    // Soma dos números
-    float Sum = R + S + T;
-    // Printar a soma
-    System.out.println("A soma dos números é " + Sum);
+    // Definir e printar o maior.
+    if (R > S && R > T) {
+      System.out.println("O maior é " + R);
+    }
+    else if (S > R && S > T) {
+      System.out.println("O maior é " + S);
+    }
+    else if (T > R && T > S) {
+      System.out.println("O maior é " + T);
+    }
+    else {
+      System.out.println("Não há um maior");
   }
 }
