@@ -26,14 +26,19 @@ class MagicSquare {
       diagonalP += Matriz[e][e];
       diagonalSec += Matriz[e][n-e-1];
     }
-    for (int i = 0; i < n; i++){
-      if (linhas[i] != diagonalP || linhas[i] != colunas[i]){
-        System.out.println("A matriz não é um quadrado mágico");
-        break;
+    if (diagonalP == diagonalSec){
+      for (int i = 0; i < n; i++){
+        if (linhas[i] != diagonalP || linhas[i] != colunas[i]){
+          System.out.println("A matriz não é um quadrado mágico");
+          break;
+        }
+        if (i == (n - 1)){
+          System.out.println("A matriz é um quadrado mágico");
+        }
       }
-      if (i == (n - 1)){
-        System.out.println("A matriz é um quadrado mágico");
-      }
+    }
+    else{
+      System.out.println("A matriz não é um quadrado mágico");
     }
   }
 }
