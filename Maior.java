@@ -8,13 +8,13 @@ class Maior{
     Scanner NumInput = new Scanner(System.in);
     // Input dos números
     System.out.println("Digite R: ");
-    int R = NumInput.nextInt();
+    float R = NumInput.nextInt();
     System.out.println("Digite S: ");
-    int S = NumInput.nextInt();
+    float S = NumInput.nextInt();
     System.out.println("Digite T: ");
-    int T = NumInput.nextInt();
+    float T = NumInput.nextInt();
     // Soma dos números
-    int Sum = R + S + T;
+    float Sum = R + S + T;
     // Printar a soma
     System.out.println("A soma dos números é " + Sum);
   }
